@@ -99,6 +99,37 @@ x <- integer(x)
 as.integer(5.6)
 as.integer(5.6 - 3i)
 
+#### Exkurs
+y<-scan()
+
+counts <- c(rpois(10,25))
+names(counts)<-0:8
+counts
+table(counts)
+mean(as.integer(names(counts)), na.rm=TRUE)
+
+OrchardSprays
+attach(OrchardSprays)
+tapply(decrease, treatment, mean)
+
+xv <- rnorm(1000,100,10)
+xv
+cat(c(
+  "Position", which(abs(xv-100)==min(abs(xv-100))), "beinhaltet den Wert", xv[which(abs(xv-100)==min(abs(xv-100)))], "der am nächsten an 100 liegt.")
+  )
+  
+cat("Insert 3 Coins\n")
+# yvi <- scan(nmax=3)
+yvi <- c(1000,100,10)
+yv <- rnorm(yvi[1],yvi[2],yvi[3])
+cat(c(
+  "Dieser Vektor beinhaltet",yvi[1],"Werte. Der Mittelwert beträgt",yvi[2],"und die Standardabweichung",yvi[3],
+  "\nDer Wert, der mit",yv[which(abs(yv-yvi[2])==min(abs(yv-yvi[2])))], "am nächsten am Mittelwert",yvi[2],"liegt befindet sich auf Position",which(abs(yv-yvi[2])==min(abs(yv-yvi[2]))),"."
+))
+boxplot(yv)
+barplot(sort(yv))
+letters
+
 #### 2.1.8 Factors #### 
 gender <- factor(c("female", "male", "female", "male", "female"))
 class(gender)
@@ -118,6 +149,20 @@ as.vector(unclass(Daphnia))
 detach(daphnia)
 
 #### 2.2 Logical Operations ####
+
+#### Exkurs
+vec<-1:80
+vec[-(1:80*(1:80%%9==0))]
+x<-c(1,2,3,4,5)
+names(x) <- as.character(x)
+outer(x,x,"|")
+TRUE | NA
+```
+```{r Sequences}
+1300:1337
+seq(1300,1337,along=0:37)
+seq(5:1)
+sequence(5:1)
 
 ```
 
