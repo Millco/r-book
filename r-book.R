@@ -16,9 +16,8 @@ library(spdep)
 library(tree)
 # setwd("R")
 library(help=spatial)
-```
 
-```{r 1 Getting Started}
+#### 1 Getting Started ####
 
 citation()
 
@@ -43,8 +42,6 @@ search()
 # detach(worms)
 
 rm(list=ls())
-
-```
 
 #### Chapter 2: Essentials of the R Language
 
@@ -247,9 +244,6 @@ sum(x > 4)
 treatment <- letters[1:5]
 (t2 <- factor(13 + (treatment == "b") + 2 * (treatment == "c") + 3 * (treatment == "d")))
 
-```
-
-```{r 2.3 Sequences}
 #### 2.3 Generating sequences ####
 1300:1337
 seq(1300,1337,along=0:37)
