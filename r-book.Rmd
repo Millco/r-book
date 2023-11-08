@@ -122,7 +122,7 @@ xv
 cat(c(
   "Position", which(abs(xv-100)==min(abs(xv-100))), "beinhaltet den Wert", xv[which(abs(xv-100)==min(abs(xv-100)))], "der am nächsten an 100 liegt.")
   )
-  
+
 cat("Insert 3 Coins\n")
 # yvi <- scan(nmax=3)
 yvi <- c(1000,100,10)
@@ -178,7 +178,6 @@ attributes(b)
 #### Exkurs
 vec<-1:80
 vec[-(1:80*(1:80%%9==0))]
-
 x<-c(1,2,3,4,5)
 names(x) <- as.character(x)
 outer(x,x,"|")
