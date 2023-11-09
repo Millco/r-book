@@ -180,22 +180,22 @@ vec<-1:80
 vec[-(1:80*(1:80%%9==0))]
 x<-c(1,2,3,4,5)
 names(x) <- as.character(x)
-outer(x,x,"|")
+outer(x,x,"&")
 TRUE | NA
 x <- c(NA, FALSE, TRUE)
 
 #### Logical arithmetic ####
 x <- 0:6
-x <= 4
+x < 4
 all(x < 10)
 any(x > 1)
-
+which(x > 1)
 sum(x > 4)
 (x < 4) * runif(7)
 ?runif(7)
 
 treatment <- letters[1:5]
-(t2 <- factor(13 + 1 * (treatment == "b") + 2 * (treatment == "c") + 2 * (treatment == "d")))
+(t2 <- factor(13 + 1 * (treatment == "b") + 2 * (treatment == "c") + 3 * (treatment == "d")))
 
 ```
 
